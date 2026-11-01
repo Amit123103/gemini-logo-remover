@@ -4909,25 +4909,39 @@ summary:focus-visible {
   color: #eff3ea;
 }
 
-.form-input,
-.form-textarea {
+#contact-form .form-input,
+#contact-form .form-textarea {
   border-color: #46523e;
-  background: #111510;
-  color: #f0f3eb;
+  background-color: #111510;
+  color: #f7f9f4;
+  caret-color: #d7ff63;
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
-.form-input::placeholder,
-.form-textarea::placeholder {
-  color: #a7b1a2;
+#contact-form .form-input::placeholder,
+#contact-form .form-textarea::placeholder {
+  color: #b4c0aa;
   opacity: 1;
 }
 
-.form-input:focus,
-.form-textarea:focus {
+#contact-form .form-input:focus,
+#contact-form .form-textarea:focus {
   border-color: #d7ff63;
-  background: #111510;
-  color: #f0f3eb;
+  background-color: #111510;
+  color: #f7f9f4;
   box-shadow: 0 0 0 3px rgba(215, 255, 99, 0.18);
+}
+
+#contact-form .form-input::selection,
+#contact-form .form-textarea::selection {
+  color: #17200d;
+  background: #d7ff63;
+}
+
+#contact-message {
+  min-height: 180px;
+  resize: vertical;
 }
 
 .legal-section p,
@@ -4986,11 +5000,4 @@ summary:focus-visible {
 
 .about-feature-card {
   color: #c2cbbf;
-}
-
-@media (max-width: 640px) {
-  .form-input,
-  .form-textarea {
-    font-size: 1rem;
-  }
 }
