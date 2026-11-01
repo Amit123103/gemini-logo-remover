@@ -1,14 +1,14 @@
-# ✨ Free Gemini & Google Flow Watermark Remover (Gemini Omni & Nano Banana)
+# Gemini media studio
 
 <p align="center">
-  <a href="https://ishara-madu.github.io/gemini-watermark-remover/">
-    <img src="./assets/amit-logo.png" alt="Gemini Watermark Remover Logo" width="39" height="48" />
+  <a href="https://amitakhil.me/gemini-logo-remover/">
+    <img src="./assets/amit-logo.png" alt="Amit Kumar studio logo" width="48" height="48" />
   </a>
 </p>
 
 <p align="center">
-  <strong>Remove visible Gemini and Google Flow watermarks from Gemini Omni videos and Nano Banana AI images online.</strong><br>
-  Completely free, private, and runs 100% client-side in your web browser with zero quality loss.
+  <strong>A browser-based workspace for previewing and adjusting compatible images and clips.</strong><br>
+  Fine-tune the result and save a separate copy from your device.
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="https://ishara-madu.github.io/gemini-watermark-remover/"><img src="https://img.shields.io/badge/🚀_Live_Demo-GitHub_Pages-6366f1?style=for-the-badge" alt="Live Demo" /></a>
+  <a href="https://amitakhil.me/gemini-logo-remover/"><img src="https://img.shields.io/badge/Live_Demo-Gemini_Studio-c9f36a?style=for-the-badge" alt="Live Demo" /></a>
   <a href="https://github.com/Amit123103/gemini-logo-remover/stargazers"><img src="https://img.shields.io/github/stars/Amit123103/gemini-logo-remover?style=for-the-badge&color=eab308" alt="GitHub Stars" /></a>
   <a href="https://amitakhil.me/SmartPortfolio/"><img src="https://img.shields.io/badge/Portfolio-Amit_Kumar-635bff?style=for-the-badge" alt="Amit Kumar Portfolio" /></a>
   <a href="mailto:akhilsingh2702@gmail.com"><img src="https://img.shields.io/badge/Contact-Email-3981e6?style=for-the-badge" alt="Email Amit Kumar" /></a>
@@ -27,37 +27,32 @@
 
 ## 🌐 Live Website
 
-👉 **Try it online:** [https://ishara-madu.github.io/gemini-watermark-remover/](https://ishara-madu.github.io/gemini-watermark-remover/)
+👉 **Try the studio:** [amitakhil.me/gemini-logo-remover](https://amitakhil.me/gemini-logo-remover/)
 
 ---
 
-## 💡 Why This Tool?
+## What it does
 
-Most AI watermark removers use **generative AI inpainting**, which hallucinates missing pixels and blurs the background.
-
-Google Gemini, Google Flow, Gemini Omni, and Veo models embed visible watermarks using **transparent alpha blending**. Because the underlying pixels are still present beneath the transparency, **Gemini Watermark Remover** uses exact mathematical unblending to subtract the watermark mask pixel-by-pixel, restoring **100% of your original image & video clarity** with zero quality loss.
-
-$$\text{Original} = \frac{\text{Watermarked} - (\text{Logo} \times \alpha)}{1 - \alpha}$$
+Choose an image or clip, inspect its preview, adjust the controls, and export a processed copy. Results depend on the input and settings; the studio does not guarantee recovery of obscured detail or removal of hidden provenance data.
 
 ---
 
 ## 🚀 Features
 
-- 🔒 **100% Private & Client-Side:** Files never leave your device. All rendering is handled locally in your browser via HTML5 Canvas and WebCodecs.
-- 🖼️ **Gemini & Nano Banana Image Support:** Clean images (PNG, JPG, WebP) with instant high-resolution lossless PNG export.
-- 🎬 **Gemini Omni, Google Flow & Veo 3 Video Support:** Fast frame-by-frame processing with MP4 export while preserving original audio tracks.
-- 🎛️ **Live Tuner & Model Presets:** Quick-select model presets for Nano Banana, Gemini Omni, Flow, and Veo alongside real-time sliders and dual zoomed comparison views.
-- ⚡ **Zero Quality Loss:** Restores exact pixel colors without blurry inpainting.
-- 📱 **Fully Responsive:** Beautiful, clean, modern UI optimized for desktop, tablet, and mobile browsers.
-- 🆓 **Unlimited & Free:** No signups, no subscriptions, and no secondary watermarks.
+- **Browser processing:** Media is processed in the browser rather than uploaded to a processing service.
+- **Image workspace:** Open PNG, JPG, and WebP files; export an adjusted PNG copy.
+- **Video workspace:** Open MP4, WebM, and MOV clips when supported by your browser.
+- **Live controls:** Tune strength, size, and position with zoomed preview details.
+- **No account required:** Start directly from the page; large files may be limited by device memory.
+- **Responsive layout:** Use the studio on desktop and smaller screens.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Frontend:** Pure Semantic HTML5, Modern Vanilla CSS (Custom Design System), JavaScript (ES6+)
-- **Processing:** HTML5 Canvas API, WebCodecs API, [MediaBunny](https://github.com/diffusion-studio/mediabunny) for high-performance in-browser video unblending and AVC/H.264 muxing
-- **Hosting:** GitHub Pages
+- **Processing:** Canvas and browser media APIs, [MediaBunny](https://github.com/diffusion-studio/mediabunny)
+- **Hosting:** GitHub Pages with a custom domain
 
 ---
 
@@ -70,7 +65,7 @@ Run the project locally with any static web server:
 git clone https://github.com/Amit123103/gemini-logo-remover.git
 
 # 2. Navigate to project folder
-cd gemini-watermark-remover
+cd gemini-logo-remover
 
 # 3. Start a local server (using Python 3, Node, or VS Code Live Server)
 # Option A: Python

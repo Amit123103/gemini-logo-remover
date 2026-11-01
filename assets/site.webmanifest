@@ -1,10 +1,10 @@
 {
-  "name": "Gemini Watermark Remover - Clean AI Video & Images",
-  "short_name": "Gemini Remover",
-  "description": "Free, 100% private client-side tool to remove Google Gemini and Veo 3 AI watermarks from images and videos.",
-  "id": "/gemini-watermark-remover/",
-  "start_url": "https://ishara-madu.github.io/gemini-watermark-remover/",
-  "scope": "https://ishara-madu.github.io/gemini-watermark-remover/",
+  "name": "Gemini media studio",
+  "short_name": "Gemini Studio",
+  "description": "A browser-based workspace for previewing and adjusting compatible images and clips.",
+  "id": "/gemini-logo-remover/",
+  "start_url": "https://amitakhil.me/gemini-logo-remover/",
+  "scope": "https://amitakhil.me/gemini-logo-remover/",
   "categories": ["utilities", "photo", "video"],
   "icons": [
     {
@@ -20,7 +20,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#101310",
+  "background_color": "#101310",
   "display": "standalone"
 }

@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://ishara-madu.github.io/gemini-watermark-remover/</loc>
+    <loc>https://amitakhil.me/gemini-logo-remover/</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://ishara-madu.github.io/gemini-watermark-remover/assets/logo.webp</image:loc>
-      <image:title>Free Gemini Watermark Remover &amp; Logo Remover</image:title>
+      <image:loc>https://amitakhil.me/gemini-logo-remover/assets/amit-logo.png</image:loc>
+      <image:title>Gemini media studio by Amit Kumar</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://ishara-madu.github.io/gemini-watermark-remover/assets/before.webp</image:loc>
-      <image:title>Google Gemini and Nano Banana Image Before Watermark Removal</image:title>
+      <image:loc>https://amitakhil.me/gemini-logo-remover/assets/before.webp</image:loc>
+      <image:title>Source media preview</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://ishara-madu.github.io/gemini-watermark-remover/assets/after.webp</image:loc>
-      <image:title>Clean AI Image After Removing Visible Gemini Watermark</image:title>
+      <image:loc>https://amitakhil.me/gemini-logo-remover/assets/after.webp</image:loc>
+      <image:title>Adjusted media preview</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://ishara-madu.github.io/gemini-watermark-remover/about.html</loc>
+    <loc>https://amitakhil.me/gemini-logo-remover/about.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ishara-madu.github.io/gemini-watermark-remover/contact.html</loc>
+    <loc>https://amitakhil.me/gemini-logo-remover/contact.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ishara-madu.github.io/gemini-watermark-remover/privacy-policy.html</loc>
+    <loc>https://amitakhil.me/gemini-logo-remover/privacy-policy.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ishara-madu.github.io/gemini-watermark-remover/terms-of-service.html</loc>
+    <loc>https://amitakhil.me/gemini-logo-remover/terms-of-service.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ishara-madu.github.io/gemini-watermark-remover/disclaimer.html</loc>
+    <loc>https://amitakhil.me/gemini-logo-remover/disclaimer.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

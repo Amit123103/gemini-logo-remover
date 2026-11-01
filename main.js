@@ -1125,7 +1125,7 @@ function initImageRemover() {
 
   const currentSettings = { gain: 0.6, offsetX: -128, offsetY: -128, sizeScale: 1 };
 
-  function setDropzoneLoading(loading, message = 'Processing image...') {
+  function setDropzoneLoading(loading, message = 'Preparing image preview...') {
     isProcessing = loading;
     if (loading) {
       dropzone.classList.add('loading');
@@ -1133,7 +1133,7 @@ function initImageRemover() {
         <div class="dropzone-loader">
           <div class="dropzone-spinner"></div>
           <p class="dropzone-title text-indigo-600">${message}</p>
-          <p class="dropzone-sub">Please wait, analyzing watermark...</p>
+          <p class="dropzone-sub">Loading the image and building its preview...</p>
         </div>
       `;
     } else {
@@ -1142,8 +1142,8 @@ function initImageRemover() {
         <div class="dropzone-icon">
           <iconify-icon icon="ph:upload-simple-bold"></iconify-icon>
         </div>
-        <p class="dropzone-title">Upload or drag your Gemini Image</p>
-        <p class="dropzone-sub">Supports PNG, JPG, WebP</p>
+        <p class="dropzone-title">Drop an image to start shaping your preview</p>
+        <p class="dropzone-sub">PNG · JPG · WebP / Files stay on this device</p>
       `;
     }
   }
@@ -1422,25 +1422,25 @@ function initImageRemover() {
       resultsArea.classList.remove('hidden');
       resultsArea.innerHTML = `
         <div class="card">
-          <h3 class="font-bold text-center mb-4">Image Watermark Cleaned Successfully!</h3>
+          <h3 class="font-bold text-center mb-4">Your image copy is ready</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <p class="text-xs mb-2">Original (${width}x${height}px)</p>
+              <p class="text-xs mb-2">Source · ${width} × ${height}px</p>
               <div class="checker p-2 text-center">
-                <img src="${originalUrl}" alt="Original image with watermark (${width}x${height}px)" style="max-height: 250px; margin: 0 auto; object-fit: contain; width: 100%;" />
+                <img src="${originalUrl}" alt="Source image (${width} by ${height} pixels)" style="max-height: 250px; margin: 0 auto; object-fit: contain; width: 100%;" />
               </div>
             </div>
             <div>
-              <p class="text-xs mb-2 text-green-600">Cleaned Result</p>
+              <p class="text-xs mb-2 text-green-600">Adjusted preview</p>
               <div class="checker p-2 text-center">
-                <img src="${url}" alt="Cleaned result image without watermark" style="max-height: 250px; margin: 0 auto; object-fit: contain; width: 100%;" />
+                <img src="${url}" alt="Adjusted image copy" style="max-height: 250px; margin: 0 auto; object-fit: contain; width: 100%;" />
               </div>
             </div>
           </div>
           <div class="mt-4 text-center">
-            <a href="${url}" download="clean_${currentFile.name}" class="btn btn-primary" onclick="handleDownloadAd()">
+            <a href="${url}" download="adjusted_${currentFile.name}" class="btn btn-primary" onclick="handleDownloadAd()">
               <iconify-icon icon="ph:download-simple-bold" width="16"></iconify-icon>
-              Download Cleaned PNG
+              Save PNG copy
             </a>
           </div>
           ${getPromoCardHtml('image')}
@@ -1491,7 +1491,7 @@ function initVideoRemover() {
 
   const currentSettings = { gain: 0.6, offsetX: -24, offsetY: -24, sizeScale: 1 };
 
-  function setDropzoneLoading(loading, message = 'Extracting best frame...') {
+  function setDropzoneLoading(loading, message = 'Preparing clip preview...') {
     isProcessing = loading;
     if (loading) {
       dropzone.classList.add('loading');
@@ -1499,7 +1499,7 @@ function initVideoRemover() {
         <div class="dropzone-loader">
           <div class="dropzone-spinner"></div>
           <p class="dropzone-title text-indigo-600">${message}</p>
-          <p class="dropzone-sub">Scanning video frames & auto-detecting watermark...</p>
+          <p class="dropzone-sub">Opening the clip and preparing a frame preview...</p>
         </div>
       `;
     } else {
@@ -1508,8 +1508,8 @@ function initVideoRemover() {
         <div class="dropzone-icon">
           <iconify-icon icon="ph:video-bold"></iconify-icon>
         </div>
-        <p class="dropzone-title">Upload or drag a Gemini Veo 3 video</p>
-        <p class="dropzone-sub">Supports MP4, WebM, MOV</p>
+        <p class="dropzone-title">Drop a clip to open the video workspace</p>
+        <p class="dropzone-sub">MP4 · WebM · MOV / Files stay on this device</p>
       `;
     }
   }
@@ -1899,21 +1899,21 @@ function initVideoRemover() {
 
       resultsArea.innerHTML = `
         <div class="card">
-          <h3 class="font-bold text-center mb-4">Video Watermark Cleaned Successfully!</h3>
+          <h3 class="font-bold text-center mb-4">Your video copy is ready</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <p class="text-xs mb-2">Original Video</p>
+              <p class="text-xs mb-2">Source clip</p>
               <video src="${res.originalUrl}" controls playsinline style="width:100%; max-height:280px;"></video>
             </div>
             <div>
-              <p class="text-xs mb-2 text-green-600">Cleaned Video</p>
+              <p class="text-xs mb-2 text-green-600">Adjusted clip</p>
               <video src="${res.url}" controls playsinline style="width:100%; max-height:280px;"></video>
             </div>
           </div>
           <div class="mt-4 text-center">
-            <a href="${res.url}" download="clean_${currentFile.name}" class="btn btn-primary" onclick="handleDownloadAd()">
+            <a href="${res.url}" download="adjusted_${currentFile.name}" class="btn btn-primary" onclick="handleDownloadAd()">
               <iconify-icon icon="ph:download-simple-bold" width="16"></iconify-icon>
-              Download Cleaned Video MP4
+              Save video copy
             </a>
           </div>
           ${getPromoCardHtml('video')}
@@ -1937,7 +1937,7 @@ function getPromoCardHtml(type = 'image') {
         <span class="results-promo-tag">
           Amit Kumar's Portfolio
         </span>
-        <span class="badge-featured">100% Free &amp; Fast</span>
+        <span class="badge-featured">No signup needed</span>
       </div>
       <div class="results-promo-body">
         <div class="results-promo-icon-box">
