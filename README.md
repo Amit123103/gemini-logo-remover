@@ -45,6 +45,9 @@ Choose an image or clip, inspect its preview, adjust the controls, and export a 
 - **Live controls:** Tune strength, size, and position with zoomed preview details.
 - **No account required:** Start directly from the page; large files may be limited by device memory.
 - **Responsive layout:** Use the studio on desktop and smaller screens.
+- **Original artwork:** Includes two custom SVG illustrations made for this project.
+- **Motion with a pause:** Subtle entrance and artwork animations respect reduced-motion preferences.
+- **Optional support:** The [donation page](https://amitakhil.me/gemini-logo-remover/donate.html) displays the project QR code and an on-page thank-you animation. Payment is handled outside the site and is not verified by it.
 
 ---
 
@@ -94,7 +97,9 @@ Feel free to check the [issues page](https://github.com/Amit123103/gemini-logo-r
 
 ## 💌 Contact & Support
 
-If you found this tool helpful, consider giving it a ⭐️ star on GitHub. For questions or collaboration, contact **Amit Kumar** at [akhilsingh2702@gmail.com](mailto:akhilsingh2702@gmail.com), or visit the [portfolio](https://amitakhil.me/SmartPortfolio/) and [GitHub profile](https://github.com/Amit123103).
+If you found this tool helpful, consider giving it a ⭐️ star on GitHub or leaving an optional donation on the [support page](https://amitakhil.me/gemini-logo-remover/donate.html). Donations use the displayed payment QR code; the site does not process or confirm payments.
+
+For questions or collaboration, contact **Amit Kumar** at [akhilsingh2702@gmail.com](mailto:akhilsingh2702@gmail.com), or visit the [portfolio](https://amitakhil.me/SmartPortfolio/) and [GitHub profile](https://github.com/Amit123103).
 
 ---
 

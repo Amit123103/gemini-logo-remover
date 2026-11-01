@@ -11,13 +11,19 @@
       <image:title>Gemini media studio by Amit Kumar</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://amitakhil.me/gemini-logo-remover/assets/before.webp</image:loc>
-      <image:title>Source media preview</image:title>
+      <image:loc>https://amitakhil.me/gemini-logo-remover/assets/studio-artwork-01.svg</image:loc>
+      <image:title>Original studio artwork: green planet and layered hills</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://amitakhil.me/gemini-logo-remover/assets/after.webp</image:loc>
-      <image:title>Adjusted media preview</image:title>
+      <image:loc>https://amitakhil.me/gemini-logo-remover/assets/studio-artwork-02.svg</image:loc>
+      <image:title>Original studio artwork: flowing glass ribbons</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://amitakhil.me/gemini-logo-remover/donate.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://amitakhil.me/gemini-logo-remover/about.html</loc>

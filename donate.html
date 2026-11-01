@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101310" />
+  <meta name="author" content="Amit Kumar" />
+  <meta name="description" content="Support Gemini media studio with an optional donation using the payment QR code." />
+  <title>Support the studio — Gemini media studio</title>
+  <link rel="icon" type="image/png" href="./assets/amit-logo.png" />
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script defer src="./donate.js"></script>
+</head>
+
+<body class="donate-page">
+  <header class="donate-header">
+    <a class="donate-brand" href="./" aria-label="Gemini media studio home">
+      <img src="./assets/amit-logo.png" width="42" height="42" alt="" />
+      <span>Gemini / media studio</span>
+    </a>
+    <a class="donate-back-link" href="./">
+      <iconify-icon icon="ph:arrow-left-bold" width="16"></iconify-icon>
+      Back to the studio
+    </a>
+  </header>
+
+  <main class="donate-main">
+    <section class="donate-intro">
+      <span class="donate-eyebrow">
+        <iconify-icon icon="ph:heart-fill" width="15"></iconify-icon>
+        Made with care, shared freely
+      </span>
+      <h1>A little support<br />keeps the studio growing.</h1>
+      <p>
+        If this project has been useful, you can leave an optional donation for Amit. Every contribution is appreciated;
+        using the studio never depends on donating.
+      </p>
+      <div class="donate-art-card" aria-hidden="true">
+        <img src="./assets/studio-artwork-02.svg" alt="" width="900" height="900" />
+        <span class="donate-art-caption">A small independent project by Amit Kumar</span>
+      </div>
+    </section>
+
+    <section class="donate-card" aria-labelledby="donate-card-title">
+      <div class="donate-card-heading">
+        <span class="donate-card-icon"><iconify-icon icon="ph:qr-code-bold" width="23"></iconify-icon></span>
+        <div>
+          <p class="donate-step">OPTIONAL SUPPORT</p>
+          <h2 id="donate-card-title">Scan to donate</h2>
+        </div>
+      </div>
+
+      <div class="donate-qr-frame">
+        <img src="./assets/donate-qr.png" alt="Payment QR code for an optional donation to Amit Kumar"
+          width="768" height="768" decoding="async" />
+      </div>
+
+      <p class="donate-instructions">
+        Open your payment app, scan the code, and follow its prompts. Confirm the recipient and amount in your app
+        before sending.
+      </p>
+      <p class="donate-security-note">
+        Payment happens in your payment app. This website does not process or verify transactions.
+      </p>
+
+      <button class="donate-thanks-button" id="donate-thanks-button" type="button">
+        <iconify-icon icon="ph:check-circle-bold" width="18"></iconify-icon>
+        I’ve completed my payment
+      </button>
+      <p class="donate-honesty-note">Already sent it? Tap to send a little celebration on this page.</p>
+
+      <div class="donate-thanks-message" id="donate-thanks-message" role="status" aria-live="polite" hidden>
+        <span class="donate-thanks-sparkle" aria-hidden="true">✦</span>
+        <strong>Thanks for supporting this project!</strong>
+        <span>Your kindness means a lot to Amit. This message is a thank-you, not a payment confirmation.</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="donate-confetti-layer" id="donate-confetti-layer" aria-hidden="true"></div>
+  <footer class="donate-footer">
+    <span>Thank you for supporting independent work.</span>
+    <a href="mailto:akhilsingh2702@gmail.com">Questions? Contact Amit</a>
+  </footer>
+</body>
+
+</html>
