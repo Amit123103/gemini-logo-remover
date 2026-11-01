@@ -4912,8 +4912,9 @@ summary:focus-visible {
 #contact-form .form-input,
 #contact-form .form-textarea {
   border-color: #46523e;
-  background-color: #111510;
-  color: #f7f9f4;
+  background-color: #f7f9f4;
+  color: #17200d;
+  -webkit-text-fill-color: #17200d;
   caret-color: #d7ff63;
   font-size: 1rem;
   line-height: 1.55;
@@ -4921,22 +4922,23 @@ summary:focus-visible {
 
 #contact-form .form-input::placeholder,
 #contact-form .form-textarea::placeholder {
-  color: #b4c0aa;
+  color: #52604b;
   opacity: 1;
 }
 
 #contact-form .form-input:focus,
 #contact-form .form-textarea:focus {
   border-color: #d7ff63;
-  background-color: #111510;
-  color: #f7f9f4;
+  background-color: #ffffff;
+  color: #17200d;
+  -webkit-text-fill-color: #17200d;
   box-shadow: 0 0 0 3px rgba(215, 255, 99, 0.18);
 }
 
 #contact-form .form-input::selection,
 #contact-form .form-textarea::selection {
-  color: #17200d;
-  background: #d7ff63;
+  color: #ffffff;
+  background: #34462b;
 }
 
 #contact-message {
