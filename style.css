@@ -4896,26 +4896,31 @@ summary:focus-visible {
 
 /* Keep shared content readable against the dark site surfaces. */
 .contact-form-container {
-  border-color: #30372e;
-  background: #181d17;
+  border-color: #d7dce5;
+  background: #ffffff;
+  color-scheme: light;
+}
+
+.contact-form-title {
+  color: #17200d;
 }
 
 .contact-form-subtitle {
-  color: #c2cbbf;
+  color: #46516d;
   line-height: 1.6;
 }
 
-.form-label {
-  color: #eff3ea;
+.contact-form-container .form-label {
+  color: #17200d;
 }
 
 #contact-form .form-input,
 #contact-form .form-textarea {
-  border-color: #46523e;
+  border-color: #a7b0be;
   background-color: #f7f9f4;
   color: #17200d;
   -webkit-text-fill-color: #17200d;
-  caret-color: #d7ff63;
+  caret-color: #34462b;
   font-size: 1rem;
   line-height: 1.55;
 }
@@ -4928,17 +4933,23 @@ summary:focus-visible {
 
 #contact-form .form-input:focus,
 #contact-form .form-textarea:focus {
-  border-color: #d7ff63;
+  border-color: #526b3e;
   background-color: #ffffff;
   color: #17200d;
   -webkit-text-fill-color: #17200d;
-  box-shadow: 0 0 0 3px rgba(215, 255, 99, 0.18);
+  box-shadow: 0 0 0 3px rgba(82, 107, 62, 0.18);
 }
 
 #contact-form .form-input::selection,
 #contact-form .form-textarea::selection {
   color: #ffffff;
   background: #34462b;
+}
+
+#contact-form .form-input:-webkit-autofill,
+#contact-form .form-textarea:-webkit-autofill {
+  -webkit-text-fill-color: #17200d;
+  box-shadow: 0 0 0 1000px #f7f9f4 inset;
 }
 
 #contact-message {
